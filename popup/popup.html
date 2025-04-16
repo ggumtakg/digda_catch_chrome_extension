@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>디그다 잡기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>디그다 잡기</h1>
+  <div id="game">
+    <!-- 3x3 두더지 구멍 -->
+    <div class="grid">
+      <div class="hole" id="hole0"></div>
+      <div class="hole" id="hole1"></div>
+      <div class="hole" id="hole2"></div>
+      <div class="hole" id="hole3"></div>
+      <div class="hole" id="hole4"></div>
+      <div class="hole" id="hole5"></div>
+      <div class="hole" id="hole6"></div>
+      <div class="hole" id="hole7"></div>
+      <div class="hole" id="hole8"></div>
+    </div>
+    <div class="info">
+        <p>점수: <span id="score">0</span></p>
+        <p>남은 시간: <span id="time">30</span>초</p>
+        <button id="startBtn">시작</button>
+      </div>      
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
