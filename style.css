@@ -1,0 +1,35 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 */
+    grid-template-rows: repeat(3, 1fr);    /* 3행 */
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    margin: 10px auto;
+  }
+
+.hole {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hole::after {
+    content: '';
+    background: url('../images/digda_in.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    transition: background-image 0.2s ease;
+  }
+  
+  .hole.mole::after {
+    background-image: url('../images/digda.png');
+  }  
